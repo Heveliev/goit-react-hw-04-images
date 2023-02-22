@@ -9,13 +9,13 @@ const modalRoot =  document.querySelector('#modal-root');
 
 export const ModalWindow = ({ onClose, show, children }) => {
     
-    const handleKeyDown = e => {
+    function handleEscDown (e) {
         if (e.code === 'Escape') {
-            onClose();
+         onClose();
         }
     }
 
-
+    const handleKeyDown = handleEscDown();
     useEffect(() => {
         
 
