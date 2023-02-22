@@ -15,7 +15,7 @@ export const ModalWindow = ({ onClose, show, children }) => {
         }
     }
 
-    const handleKeyDown = handleEscDown();
+    const handleKeyDown = handleEscDown;
     useEffect(() => {
         
 
