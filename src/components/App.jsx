@@ -68,7 +68,7 @@ const App = () => {
                 ariaLabel="blocks-loading"
           colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']} /></div>)}
         {status === Status.REJECTED && (<div><p>{error.message}</p></div>)}
-     {status === Status.RESOLVED && (<GalleryList image={images} />)}
+     {<GalleryList image={images} />}
         {showBtn && (<ButtonLoadMore title='Load more' onClick={handleClickLoadMore} />)}
       </AppStyle>
   )

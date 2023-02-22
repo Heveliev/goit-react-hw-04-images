@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from 'prop-types';
 import { createPortal  } from "react-dom";
-import { Overlay,Modal } from "./ModalWindow.styled"
-import { useCallback } from "react";
+import { Overlay, Modal } from "./ModalWindow.styled";
 
 
 const modalRoot =  document.querySelector('#modal-root');
@@ -10,11 +9,11 @@ const modalRoot =  document.querySelector('#modal-root');
 
 export const ModalWindow = ({ onClose, show, children }) => {
     
-    const handleKeyDown = useCallback(e => {
+    const handleKeyDown = e => {
         if (e.code === 'Escape') {
             onClose();
         }
-    },[onClose])
+    }
 
 
     useEffect(() => {
