@@ -74,31 +74,5 @@ const App = () => {
   )
 }
 
-// class App extends React.Component 
-
-
-
-
-//   render(){
-//     const { error, status,showBtn } = this.state;
-//     return (
-//       <AppStyle>
-//         <Header onSubmit={this.handleSubmitForm} />
-//         {status === 'idle' && (<div><p>Enter a value in the input field</p></div>)}
-//         {status === 'pending' && (<div><ColorRing
-//              visible={true}
-//                 height="80"
-//                 width="80"
-//                 ariaLabel="blocks-loading"
-//           colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']} /></div>)}
-//         {status === 'rejected' && (<div><p>{error.message}</p></div>)}
-//         {status === 'resolved' && (<GalleryList image={this.state.image} />)}
-//         {showBtn && (<ButtonLoadMore title='Load more' onClick={this.handleClickLoadMore} />)}
-//       </AppStyle>
-//     );
-//   }
- 
-// };
-
 
 export {App}
