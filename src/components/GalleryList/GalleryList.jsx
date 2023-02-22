@@ -4,9 +4,8 @@ import { GalleryItem } from "components/GalleryItem/GalleryItem";
 
 
 export const GalleryList = ({image})=>{
-
             return (<List >{image.map(img => (<GalleryItem
-                key={img.user}
+                key={img.id}
                 img={img.webformatURL}
                 user={img.user}
                 urlBig={img.largeImageURL} />))}</List>)
@@ -15,6 +14,6 @@ export const GalleryList = ({image})=>{
 
     
 
-GalleryItem.propTypes = {
+GalleryList.propTypes = {
     image: PropTypes.array.isRequired
 }
